@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Goblin : MonoBehaviour
 {
-    [SerializeField] ulong health;
+    [SerializeField] int health;
     [SerializeField] ulong currencyDrop;
 
     // Start is called before the first frame update
@@ -19,10 +19,10 @@ public class Enemy : MonoBehaviour
 
     }
 
-    public void dealDamage(ulong damage)
+    public void dealDamage(int damage)
     {
         this.health -= damage;
-        if (this.health == 0)
+        if (this.health < 0)
         {
             CurrencyManager.Instance.addMonsterCurrency(currencyDrop);
             EnemiesManager.Instance.removeFirstInLine();
