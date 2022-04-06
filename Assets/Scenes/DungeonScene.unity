@@ -721,6 +721,9 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 827806324}
   - {fileID: 1058250561}
+  level: 1
+  waveSize: 0
+  isBoss: 0
 --- !u!4 &1658091675
 Transform:
   m_ObjectHideFlags: 0
