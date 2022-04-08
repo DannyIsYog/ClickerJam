@@ -6,6 +6,7 @@ public class ItemManager : MonoBehaviour
 {   
     [SerializeField] GameObject clientCart;
     [SerializeField] ClientCart currentCart;
+    [SerializeField] GameObject ClientManager;
     [SerializeField] int maxClicks;
     [SerializeField] int maxMoney;
     [SerializeField] GameObject firstPosition;
@@ -16,6 +17,8 @@ public class ItemManager : MonoBehaviour
     void Start()
     {
         createEntity();
+        this.ClientManager.GetComponent<ClientManager>().moveLine();
+
     }
 
     // Update is called once per frame
@@ -34,12 +37,16 @@ public class ItemManager : MonoBehaviour
 
     public void buttonClicked(){
         //Change sprites as the player clicks the button
-        if (this.currentCart.getClicks() == this.currentCart.getTotalNumberClicks() +1){
+        if(this.currentCart.getClicks() == this.currentCart.getTotalNumberClicks() +1){
+            this.currentCart.oneClick();
+            this.ClientManager.GetComponent<ClientManager>().moveLine();
             this.currentCart.GetComponent<Rigidbody2D>().AddForce(move,ForceMode2D.Impulse);
-            Destroy(this.currentCart.gameObject,1f);
-            Invoke("createEntity",0.5f);
+            CurrencyManager.instance.addSupermarketCurrency((ulong) currentCart.getSupermarketCurrency());
+            Destroy(currentCart.gameObject,.5f);
+            Invoke("createEntity",1f);
+            
         }
-        else{
+        else if (this.currentCart.getClicks() > this.currentCart.getTotalNumberClicks()){
             Sprite sprite = this.currentCart.getRandomSprite();
             SpriteRenderer spriteRenderer = Instantiate(item,firstPosition.transform).GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = sprite;

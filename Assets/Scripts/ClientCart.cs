@@ -34,6 +34,10 @@ public class ClientCart : MonoBehaviour{
     public void setSupermarketCurrency(int supermarketCurrency){
         this.supermarketCurrency = supermarketCurrency;
     }
+
+    public int getSupermarketCurrency(){
+        return this.supermarketCurrency;
+    }
     public int getClicks(){
         return this.clicks;
     }
