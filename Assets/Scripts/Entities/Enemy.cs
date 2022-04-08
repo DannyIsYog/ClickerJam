@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] ulong health;
     [SerializeField] ulong currencyDrop;
 
+    public HealthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +19,12 @@ public class Enemy : MonoBehaviour
         float a = Mathf.Pow(1.55f, level - 1);
         this.health = (ulong)10 * (ulong)(level - 1 + Mathf.Pow(1.55f, level - 1));
         if (isBoss) this.health *= 10;
+        healthBar.SetMaxHealth(health);
 
         //Calculate currencyDrop
         this.currencyDrop = this.health / 10;
+
+        gameObject.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
 
     }
 
@@ -31,7 +36,13 @@ public class Enemy : MonoBehaviour
 
     public void dealDamage(ulong damage)
     {
+        if (this.health < damage)
+        {
+            die();
+            return;
+        }
         this.health -= damage;
+        updateHealthBar();
         if (this.health == 0) die();
     }
 
@@ -40,5 +51,10 @@ public class Enemy : MonoBehaviour
         CurrencyManager.Instance.addMonsterCurrency(currencyDrop);
         EnemiesManager.Instance.removeFirstInLine();
         Destroy(gameObject);
+    }
+
+    void updateHealthBar()
+    {
+        healthBar.SetHealth(this.health);
     }
 }

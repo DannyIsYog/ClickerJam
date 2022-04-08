@@ -29,9 +29,11 @@ public class CurrencyManager : MonoBehaviour
         this.monsterCurrency += monsterCurrencyToAdd;
     }
 
-    public void removeMonsterCurrency(ulong monsterCurrencyToRemove)
+    public bool removeMonsterCurrency(ulong monsterCurrencyToRemove)
     {
-        this.monsterCurrency += monsterCurrencyToRemove;
+        if (this.monsterCurrency < monsterCurrencyToRemove) return false;
+        this.monsterCurrency -= monsterCurrencyToRemove;
+        return true;
     }
 
     #endregion
@@ -42,9 +44,11 @@ public class CurrencyManager : MonoBehaviour
         this.supermarketCurrency += supermarketCurrencyToAdd;
     }
 
-    public void removeSupermarketCurrency(ulong supermarketCurrencyToRemove)
+    public bool removeSupermarketCurrency(ulong supermarketCurrencyToRemove)
     {
-        this.supermarketCurrency += supermarketCurrencyToRemove;
+        if (this.supermarketCurrency < supermarketCurrencyToRemove) return false;
+        this.supermarketCurrency -= supermarketCurrencyToRemove;
+        return true;
     }
 
     #endregion
