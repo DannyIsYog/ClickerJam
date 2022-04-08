@@ -9,7 +9,7 @@ public class SupermarketUpgrade : ScriptableObject
     public string upgradeName;
     public ulong moneyMultiplier;
     public ulong moneyFlat;
-    [HideInInspector] public int level = 0;
+    public int level = 0;
     public float cost;
     public float growthCost;
 }

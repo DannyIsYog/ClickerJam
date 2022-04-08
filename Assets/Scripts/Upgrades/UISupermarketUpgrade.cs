@@ -10,6 +10,7 @@ public class UISupermarketUpgrade : MonoBehaviour
     public void buyUpgrade()
     {
         this.upgrade = UpgradesManager.Instance.buyUpgrade(upgrade);
+        updateText();
     }
     private void updateText()
     {

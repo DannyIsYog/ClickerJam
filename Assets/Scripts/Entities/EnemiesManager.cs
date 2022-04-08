@@ -30,7 +30,7 @@ public class EnemiesManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-    void Start()
+    void StartDungeon()
     {
         calculateWaveSize();
         queue = new List<GameObject>();

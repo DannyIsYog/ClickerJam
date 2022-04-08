@@ -44,7 +44,8 @@ public class UpgradesManager : MonoBehaviour
 
         //Increase cost and level
         upgrade.level++;
-        upgrade.cost *= (ulong)upgrade.growthCost;
+        upgrade.cost *= upgrade.growthCost;
+        Debug.Log(upgrade.cost);
 
         //update it on the dictionary
         supermarketUpgrades[upgradeName] = upgrade;
@@ -70,7 +71,6 @@ public class UpgradesManager : MonoBehaviour
         //Increase cost and level
         upgrade.level++;
         upgrade.cost *= upgrade.growthCost;
-        Debug.Log(upgrade.cost);
 
         //update it on the dictionary
         monsterUpgrades[upgradeName] = upgrade;
