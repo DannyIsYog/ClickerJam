@@ -34,22 +34,30 @@ public class EnemiesManager : MonoBehaviour
     {
         calculateWaveSize();
         queue = new List<GameObject>();
+        GameObject enemy;
+        int i = 1;
         foreach (GameObject spawnPoint in spawnPoints)
         {
-            queue.Add(Instantiate(enemiesList[Random.Range(0, enemiesList.Count)], spawnPoint.transform));
+            enemy = Instantiate(enemiesList[Random.Range(0, enemiesList.Count)], spawnPoint.transform);
+            enemy.GetComponent<SpriteRenderer>().sortingOrder = i;
+            queue.Add(enemy);
             waveSize--;
+            i--;
         }
     }
 
     void handleWave()
     {
+        GameObject enemy;
         if (waveSize == 0)
         {
             level++;
             calculateWaveSize();
         }
         if (waveSize == 1) this.isBoss = true;
-        queue.Add(Instantiate(enemiesList[Random.Range(0, enemiesList.Count)], spawnPoints[spawnPoints.Count - 1].transform));
+        enemy = Instantiate(enemiesList[Random.Range(0, enemiesList.Count)], spawnPoints[spawnPoints.Count - 1].transform);
+        enemy.GetComponent<SpriteRenderer>().sortingOrder = 0;
+        queue.Add(enemy);
         waveSize--;
 
     }
@@ -61,6 +69,7 @@ public class EnemiesManager : MonoBehaviour
 
         //moves the enemy in the back to the front of the queue
         queue[0].transform.position = spawnPoints[0].transform.position;
+        queue[0].GetComponent<SpriteRenderer>().sortingOrder = 1;
 
         handleWave();
     }

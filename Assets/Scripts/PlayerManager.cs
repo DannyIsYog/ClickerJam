@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance { get; private set; }
 
     public ulong damage;
+
+    public int scene;
 
     private void Awake()
     {
@@ -18,7 +21,7 @@ public class PlayerManager : MonoBehaviour
         {
             Instance = this;
         }
-
+        scene = 0;
         DontDestroyOnLoad(gameObject);
     }
 
@@ -26,4 +29,20 @@ public class PlayerManager : MonoBehaviour
     {
         enemy.dealDamage(damage);
     }
+
+    public void changeScene()
+    {
+        //if in dungeon, load supermarket
+        if (scene == 0)
+        {
+            SceneManager.LoadScene("Supermarket");
+            scene = 1;
+        }
+        else
+        {
+            SceneManager.LoadScene("Dungeon");
+            scene = 0;
+        }
+    }
+
 }
