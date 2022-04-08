@@ -9,6 +9,9 @@ public class UpgradesManager : MonoBehaviour
     Dictionary<string, MonsterUpgrade> monsterUpgrades = new Dictionary<string, MonsterUpgrade>();
     public static UpgradesManager Instance { get; private set; }
 
+    public GameObject supermarketMenuUI;
+    public GameObject dungeonMenuUI;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -72,5 +75,17 @@ public class UpgradesManager : MonoBehaviour
         //update it on the dictionary
         monsterUpgrades[upgradeName] = upgrade;
         return upgrade;
+    }
+
+    public void changeDungeonUI()
+    {
+        dungeonMenuUI.SetActive(true);
+        supermarketMenuUI.SetActive(false);
+    }
+
+    public void changeSupermarketUI()
+    {
+        supermarketMenuUI.SetActive(true);
+        dungeonMenuUI.SetActive(false);
     }
 }

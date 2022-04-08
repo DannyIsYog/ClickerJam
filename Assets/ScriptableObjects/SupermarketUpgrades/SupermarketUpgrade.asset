@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c8a525b7aca78648bf5db90f2dec236, type: 3}
-  m_Name: Stick
+  m_Script: {fileID: 11500000, guid: 129daebc3d447b744bcf5946d4670287, type: 3}
+  m_Name: SupermarketUpgrade
   m_EditorClassIdentifier: 
   Sprite: {fileID: 0}
-  upgradeName: stick
-  damageMultiplier: 0
-  damageFlat: 1
-  level: 22
-  cost: 41.40566
-  growthCost: 1.07
+  upgradeName: valueItems
+  moneyMultiplier: 2
+  moneyFlat: 0
+  level: 0
+  cost: 2
+  growthCost: 1.2
