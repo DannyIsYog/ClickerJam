@@ -92,7 +92,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &991570106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -341,7 +341,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.034999847, y: -0.1401}
   m_SizeDelta: {x: 1.1909, y: -0.2802}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 3874867850131607321}
   - component: {fileID: 3874867850131607322}
   - component: {fileID: 3874867850131607320}
+  - component: {fileID: 5281691579397948065}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -482,3 +483,21 @@ MonoBehaviour:
   health: 5
   currencyDrop: 5
   healthBar: {fileID: 991570107}
+  healthBarObject: {fileID: 991570105}
+  colliderComponent: {fileID: 5281691579397948065}
+--- !u!70 &5281691579397948065
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3874867850131607323}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.024378777, y: -0.12798727}
+  m_Size: {x: 2.504972, y: 3.4340255}
+  m_Direction: 0

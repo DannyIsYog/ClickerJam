@@ -7,8 +7,11 @@ public class ItemManager : MonoBehaviour
     [SerializeField] GameObject clientCart;
     [SerializeField] ClientCart currentCart;
     [SerializeField] GameObject ClientManager;
+    [SerializeField] int minClicks;
     [SerializeField] int maxClicks;
     [SerializeField] int maxMoney;
+    [SerializeField] int minMoney;
+
     [SerializeField] GameObject firstPosition;
     [SerializeField] GameObject item;
 

@@ -42,6 +42,7 @@ public class EnemiesManager : MonoBehaviour
         {
             enemy = Instantiate(enemiesList[Random.Range(0, enemiesList.Count)], spawnPoint.transform);
             enemy.GetComponent<SpriteRenderer>().sortingOrder = i;
+            if (i == 1) enemy.GetComponent<Enemy>().toFront();
             queue.Add(enemy);
             waveSize--;
             i--;
@@ -72,6 +73,7 @@ public class EnemiesManager : MonoBehaviour
         //moves the enemy in the back to the front of the queue
         queue[0].transform.position = spawnPoints[0].transform.position;
         queue[0].GetComponent<SpriteRenderer>().sortingOrder = 1;
+        queue[0].GetComponent<Enemy>().toFront();
 
         handleWave();
     }

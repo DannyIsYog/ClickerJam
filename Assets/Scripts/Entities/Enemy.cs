@@ -9,6 +9,9 @@ public class Enemy : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public GameObject healthBarObject;
+    public Collider2D colliderComponent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +31,10 @@ public class Enemy : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseDown()
     {
-
+        EnemiesManager.Instance.damageFirstInLine();
+        if (Random.Range(0f, 1f) < 0.1f) AudioManager.instance.Play("hurt");
     }
 
     public void dealDamage(ulong damage)
@@ -56,5 +59,11 @@ public class Enemy : MonoBehaviour
     void updateHealthBar()
     {
         healthBar.SetHealth(this.health);
+    }
+
+    public void toFront()
+    {
+        healthBarObject.SetActive(true);
+        colliderComponent.enabled = true;
     }
 }
