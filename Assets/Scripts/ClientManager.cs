@@ -8,6 +8,8 @@ public class ClientManager : MonoBehaviour
     [SerializeField] List<GameObject> customerPositions;
     [SerializeField] GameObject firstCustomer;
     [SerializeField] GameObject secondCustomer;
+    [SerializeField] GameObject chatBubble;
+    [SerializeField] List<string> DialogueOptions;
     [SerializeField] List<Sprite> customersSprites;
 
     // Start is called before the first frame update
@@ -23,12 +25,15 @@ public class ClientManager : MonoBehaviour
     
     void createCustomer(){
         this.firstCustomer = Instantiate(this.customer,this.customerPositions[0].transform);
-        this.firstCustomer.GetComponent<SpriteRenderer>().sprite = this.customersSprites[0];
-        this.firstCustomer.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        int spriteNum = Random.Range(0,customersSprites.Count);
+        int dialogueNum = Random.Range(0,DialogueOptions.Count);
+        this.chatBubble.GetComponent<chatBubble>().writeText(DialogueOptions[dialogueNum]);
+        this.firstCustomer.GetComponent<SpriteRenderer>().sprite = this.customersSprites[spriteNum];
     }
 
     void move1(){
         this.firstCustomer.transform.position = this.customerPositions[1].transform.position;
+        this.chatBubble.GetComponent<chatBubble>().clearText();
     }
 
     void switchCustomer(){
@@ -45,8 +50,8 @@ public class ClientManager : MonoBehaviour
             switchCustomer();
         }
         else{
+            Destroy(secondCustomer.gameObject,0f);
             move1();
-            Destroy(secondCustomer.gameObject,.5f);
             switchCustomer();
         }
     }
