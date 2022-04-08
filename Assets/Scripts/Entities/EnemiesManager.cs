@@ -7,7 +7,7 @@ public class EnemiesManager : MonoBehaviour
     [SerializeField] List<GameObject> queue;
     [SerializeField] List<GameObject> enemiesList;
 
-    [SerializeField] List<GameObject> spawnPoints;
+    [SerializeField] List<GameObject> spawnPoints = new List<GameObject>();
 
     [SerializeField] public int level;
 
@@ -30,8 +30,10 @@ public class EnemiesManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-    void StartDungeon()
+    public void StartDungeon()
     {
+        spawnPoints[0] = GameObject.Find("Front");
+        spawnPoints[1] = GameObject.Find("2ndPlace");
         calculateWaveSize();
         queue = new List<GameObject>();
         GameObject enemy;
