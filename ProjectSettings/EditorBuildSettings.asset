@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Dungeon.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/SupermarketBad.unity
-    guid: 429213db4a538c44fa8640dc993a1126
+    path: Assets/Scenes/Supermarket.unity
+    guid: 25be1d1cf51a0634eac810e3c4245d42
   m_configObjects: {}
