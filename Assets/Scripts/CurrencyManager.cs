@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class CurrencyManager : MonoBehaviour
 {
-    public static CurrencyManager instance { get; private set; }
+    public static CurrencyManager Instance { get; private set; }
     [SerializeField] ulong monsterCurrency;
     [SerializeField] ulong supermarketCurrency;
 
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            Instance = this;
         }
 
         DontDestroyOnLoad(gameObject);
