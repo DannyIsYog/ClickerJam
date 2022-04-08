@@ -21,7 +21,6 @@ public class PlayerManager : MonoBehaviour
         {
             Instance = this;
         }
-        scene = 0;
         DontDestroyOnLoad(gameObject);
     }
 
