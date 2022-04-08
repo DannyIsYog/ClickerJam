@@ -41,7 +41,7 @@ public class ItemManager : MonoBehaviour
             this.currentCart.oneClick();
             this.ClientManager.GetComponent<ClientManager>().moveLine();
             this.currentCart.GetComponent<Rigidbody2D>().AddForce(move,ForceMode2D.Impulse);
-            CurrencyManager.instance.addSupermarketCurrency((ulong) currentCart.getSupermarketCurrency());
+            CurrencyManager.Instance.addSupermarketCurrency((ulong) currentCart.getSupermarketCurrency());
             Destroy(currentCart.gameObject,.5f);
             Invoke("createEntity",1f);
             
