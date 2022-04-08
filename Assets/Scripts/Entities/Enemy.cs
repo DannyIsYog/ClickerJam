@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
         //Calculate currencyDrop
         this.currencyDrop = this.health / 10;
 
-        gameObject.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0f, 1f, 0f, 1f, 1f, 1f);
+        gameObject.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0f, 1f, 0.4f, 0.4f, 1f, 1f);
 
     }
 
