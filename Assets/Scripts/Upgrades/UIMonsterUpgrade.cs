@@ -22,7 +22,7 @@ public class UIMonsterUpgrade : MonoBehaviour
 
     private void updateText()
     {
-        _NameText.text = upgrade.name;
+        _NameText.text = upgrade.upgradeName;
         _CostText.text = Mathf.CeilToInt(upgrade.cost).ToString() + "SP";
         _BuffText.text = upgrade.damageFlat > 0 ? '+' + upgrade.damageFlat.ToString() : 'x' + upgrade.damageMultiplier.ToString();
         _LevelText.text = "lvl." + upgrade.level.ToString();

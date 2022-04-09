@@ -1390,10 +1390,30 @@ MonoBehaviour:
   - Who brought it, who brought it, was the sweet droplet!
   - 'Amazing weather today. '
   - "Can\u2019t wait for sales season."
-  - 'Hopefully I have enough money for all of this. '
-  - 'Hurry up I have places to be. '
+  - Hopefully I have enough money for all of this.
+  - "Let\u2019s go, I have places to be!"
+  - Hurry! I have to start building a flying boat to go to Berkana.
   - Some goblin smashed a cart against me.
   - And what is the use of a book without pictures or conversations?
+  - "There\u2019s this new game to be released from GDT that I really want. Will
+    you have it?"
+  - I like how low your prices are.
+  - That catchy Christmas tune from your commercials really stuck with me.
+  - My kid loves your Shape Toys. His favorites are a bunch of cubes.
+  - "Good thing you have a gardening section, I\u2019m trying to build a little home
+    ecosystem."
+  - "Lovely park you have near here. Too bad it\u2019s made of paper\u2026"
+  - "Imagine playing a game where you have to endlessly click. That\u2019s such a
+    dumb concept."
+  - "I\u2019m so glad you have a huge variety of jams! Peach jam, strawberry jam,
+    tomato jam, game jam\u2026"
+  - GO GO GO! FASTER FASTER FASTER!
+  - Thank you so much, have a lovely day.
+  - "There\u2019s so many goblins around nowadays\u2026"
+  - I heard about a ugly nosed king living in the woods. Scary.
+  - "So umm\u2026 what\u2019s up? (i hate small talk)"
+  - HEY, have you seen that show about a paper company!?
+  - "I used to click cookies all day\u2026 I\u2019m so glad I got through that phase."
   customersSprites:
   - {fileID: -2168180712227228320, guid: c51699bfa921cd64ea40d53f859f9a16, type: 3}
   - {fileID: -651531681796905694, guid: c51699bfa921cd64ea40d53f859f9a16, type: 3}

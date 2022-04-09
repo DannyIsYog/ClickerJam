@@ -19,7 +19,7 @@ public class UISupermarketUpgrade : MonoBehaviour
     }
     private void updateText()
     {
-        _NameText.text = upgrade.name;
+        _NameText.text = upgrade.upgradeName;
         _CostText.text = Mathf.CeilToInt(upgrade.cost).ToString() + "SP";
         _BuffText.text = upgrade.moneyFlat > 0 ? '+' + upgrade.moneyFlat.ToString() : 'x' + upgrade.moneyMultiplier.ToString();
         _LevelText.text = "lvl." + upgrade.level.ToString();
