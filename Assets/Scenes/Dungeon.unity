@@ -596,8 +596,8 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: cashier_bip
     clip: {fileID: 8300000, guid: a821d72ad3d1ffe409336b65bb9368bf, type: 3}
-    volume: 0.51
-    pitch: 0.4
+    volume: 0.14
+    pitch: 3
     loop: 0
     source: {fileID: 0}
   - name: change_scene
@@ -2809,7 +2809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1243432827
 AudioSource:
   m_ObjectHideFlags: 0

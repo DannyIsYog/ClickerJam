@@ -48,6 +48,7 @@ public class ItemManager : MonoBehaviour
             this.ClientManager.GetComponent<ClientManager>().moveLine();
             this.currentCart.GetComponent<Rigidbody2D>().AddForce(move, ForceMode2D.Impulse);
             CurrencyManager.Instance.addSupermarketCurrency(currentCart.getSupermarketCurrency());
+            AudioManager.instance.Play("cashier_bip");
             Destroy(currentCart.gameObject, .5f);
             Invoke("createEntity", 1f);
 
@@ -59,6 +60,7 @@ public class ItemManager : MonoBehaviour
             spriteRenderer.sprite = sprite;
             spriteRenderer.sortingOrder = 3;
             spriteRenderer.gameObject.GetComponent<Rigidbody2D>().AddForce(move, ForceMode2D.Impulse);
+            AudioManager.instance.Play("cashier_bip");
             Destroy(spriteRenderer.gameObject, 1f);
             this.currentCart.oneClick();
         }
