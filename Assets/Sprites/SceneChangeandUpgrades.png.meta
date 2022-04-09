@@ -108,10 +108,10 @@ TextureImporter:
         serializedVersion: 2
         x: 3
         y: 216
-        width: 63
+        width: 122
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,7 +132,7 @@ TextureImporter:
         width: 186
         height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,27 +140,6 @@ TextureImporter:
       bones: []
       spriteID: 4bb13d3028ce13dd0800000000000000
       internalID: -2507963474314585164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SceneChangeandUpgrades_2
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 168
-        width: 63
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a5ad834254a86a30800000000000000
-      internalID: 4208794525005358502
       vertices: []
       indices: 
       edges: []
@@ -174,7 +153,7 @@ TextureImporter:
         width: 186
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
