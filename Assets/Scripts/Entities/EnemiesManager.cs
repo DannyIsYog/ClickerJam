@@ -34,6 +34,7 @@ public class EnemiesManager : MonoBehaviour
     {
         spawnPoints[0] = GameObject.Find("Front");
         spawnPoints[1] = GameObject.Find("2ndPlace");
+        spawnPoints[2] = GameObject.Find("3rdPlace");
         calculateWaveSize();
         queue = new List<GameObject>();
         GameObject enemy;
@@ -72,6 +73,7 @@ public class EnemiesManager : MonoBehaviour
 
         //moves the enemy in the back to the front of the queue
         queue[0].transform.position = spawnPoints[0].transform.position;
+        queue[1].transform.position = spawnPoints[1].transform.position;
         queue[0].GetComponent<SpriteRenderer>().sortingOrder = 1;
         queue[0].GetComponent<Enemy>().toFront();
 
