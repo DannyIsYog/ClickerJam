@@ -15,7 +15,7 @@ MonoBehaviour:
   Sprite: {fileID: 6180016785327870610, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
   upgradeName: Gum
   moneyMultiplier: 0
-  moneyFlat: 0
+  moneyFlat: 500
   level: 0
-  cost: 0
-  growthCost: 0
+  cost: 10000
+  growthCost: 1.7

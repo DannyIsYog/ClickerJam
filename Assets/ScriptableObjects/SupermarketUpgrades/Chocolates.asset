@@ -15,7 +15,7 @@ MonoBehaviour:
   Sprite: {fileID: 790906871906464573, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
   upgradeName: Choco
   moneyMultiplier: 0
-  moneyFlat: 0
+  moneyFlat: 1000
   level: 0
-  cost: 0
-  growthCost: 0
+  cost: 50000
+  growthCost: 1.9

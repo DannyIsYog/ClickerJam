@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: -8893982805119575827, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
   upgradeName: Magazine
-  moneyMultiplier: 0
+  moneyMultiplier: 13
   moneyFlat: 0
   level: 0
-  cost: 0
-  growthCost: 0
+  cost: 10000
+  growthCost: 6.9

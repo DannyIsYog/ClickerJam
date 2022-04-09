@@ -17,5 +17,5 @@ MonoBehaviour:
   moneyMultiplier: 0
   moneyFlat: 50
   level: 0
-  cost: 0
-  growthCost: 0
+  cost: 500
+  growthCost: 1.3
