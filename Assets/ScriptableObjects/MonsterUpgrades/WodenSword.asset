@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c8a525b7aca78648bf5db90f2dec236, type: 3}
-  m_Name: Stick
+  m_Name: WodenSword
   m_EditorClassIdentifier: 
-  Sprite: {fileID: -4540900035698372409, guid: 1d0e177437667ed4aa1571a5f576d2e1, type: 3}
-  upgradeName: stick
+  Sprite: {fileID: 0}
+  upgradeName: Wood Sword
   damageMultiplier: 0
-  damageFlat: 1
-  level: 29
-  cost: 66.488464
-  growthCost: 1.07
+  damageFlat: 10
+  level: 0
+  cost: 100
+  growthCost: 1.3
