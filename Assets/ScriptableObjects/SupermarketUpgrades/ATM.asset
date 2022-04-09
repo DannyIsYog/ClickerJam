@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129daebc3d447b744bcf5946d4670287, type: 3}
   m_Name: ATM
   m_EditorClassIdentifier: 
-  Sprite: {fileID: -2282087247732282694, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
+  Sprite: {fileID: 4361994572559286776, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
   upgradeName: ATM
   moneyMultiplier: 0
   moneyFlat: 50

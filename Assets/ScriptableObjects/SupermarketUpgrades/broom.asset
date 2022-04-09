@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129daebc3d447b744bcf5946d4670287, type: 3}
   m_Name: broom
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 5592870823734184871, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
+  Sprite: {fileID: 7151366046693117359, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
   upgradeName: Broom
   moneyMultiplier: 0
   moneyFlat: 5
-  level: 1
-  cost: 10
+  level: 18
+  cost: 221.86127
   growthCost: 1.2
