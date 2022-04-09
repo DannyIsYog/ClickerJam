@@ -16,6 +16,6 @@ MonoBehaviour:
   upgradeName: stick
   damageMultiplier: 0
   damageFlat: 1
-  level: 29
-  cost: 66.488464
+  level: 0
+  cost: 2
   growthCost: 1.07

@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClientCart : MonoBehaviour{
-    [SerializeField] int supermarketCurrency;
+public class ClientCart : MonoBehaviour
+{
+    [SerializeField] ulong supermarketCurrency;
     [SerializeField] int clicks;
     [SerializeField] int totalNumberClicks = 0;
     [SerializeField] List<Sprite> sprites;
@@ -19,37 +20,45 @@ public class ClientCart : MonoBehaviour{
     {
     }
 
-    public void setTotalNumberClicks(int totalNumberClicks){
+    public void setTotalNumberClicks(int totalNumberClicks)
+    {
         this.totalNumberClicks = totalNumberClicks;
     }
 
-    public void oneClick(){
+    public void oneClick()
+    {
         this.totalNumberClicks += 1;
     }
 
-    public void setClicks(int clicks){
+    public void setClicks(int clicks)
+    {
         this.clicks = clicks;
     }
-    
-    public void setSupermarketCurrency(int supermarketCurrency){
+
+    public void setSupermarketCurrency(ulong supermarketCurrency)
+    {
         this.supermarketCurrency = supermarketCurrency;
     }
 
-    public int getSupermarketCurrency(){
+    public ulong getSupermarketCurrency()
+    {
         return this.supermarketCurrency;
     }
-    public int getClicks(){
+    public int getClicks()
+    {
         return this.clicks;
     }
 
-    public int getTotalNumberClicks(){
+    public int getTotalNumberClicks()
+    {
         return this.totalNumberClicks;
     }
 
-    public Sprite getRandomSprite(){
-        int spriteIndex = Random.Range(0,sprites.Count);
+    public Sprite getRandomSprite()
+    {
+        int spriteIndex = Random.Range(0, sprites.Count);
         return sprites[spriteIndex];
-    } 
+    }
 
 
 }

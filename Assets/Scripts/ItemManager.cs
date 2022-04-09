@@ -7,10 +7,10 @@ public class ItemManager : MonoBehaviour
     [SerializeField] GameObject clientCart;
     [SerializeField] ClientCart currentCart;
     [SerializeField] GameObject ClientManager;
-    [SerializeField] int minClicks;
-    [SerializeField] int maxClicks;
-    [SerializeField] int maxMoney;
-    [SerializeField] int minMoney;
+    [SerializeField] int minClicks = 2;
+    [SerializeField] int maxClicks = 50;
+    [SerializeField] ulong maxMoney = 1;
+    [SerializeField] ulong minMoney = 10;
 
     [SerializeField] GameObject firstPosition;
     [SerializeField] GameObject item;
@@ -32,8 +32,8 @@ public class ItemManager : MonoBehaviour
 
     private void createEntity()
     {
-        int clicks = Random.Range(1, maxClicks);
-        int money = Random.Range(1, maxMoney);
+        int clicks = Random.Range(minClicks, maxClicks);
+        ulong money = UpgradesManager.Instance.getMoneyUpgrade((ulong)(Mathf.CeilToInt(Random.Range(minMoney, maxMoney)) * Mathf.CeilToInt(clicks / 10)));
         this.currentCart = Instantiate(clientCart, firstPosition.transform).GetComponent<ClientCart>();
         this.currentCart.setClicks(clicks);
         this.currentCart.setSupermarketCurrency(money);
@@ -47,7 +47,7 @@ public class ItemManager : MonoBehaviour
             this.currentCart.oneClick();
             this.ClientManager.GetComponent<ClientManager>().moveLine();
             this.currentCart.GetComponent<Rigidbody2D>().AddForce(move, ForceMode2D.Impulse);
-            CurrencyManager.Instance.addSupermarketCurrency((ulong)currentCart.getSupermarketCurrency());
+            CurrencyManager.Instance.addSupermarketCurrency(currentCart.getSupermarketCurrency());
             Destroy(currentCart.gameObject, .5f);
             Invoke("createEntity", 1f);
 
@@ -57,6 +57,7 @@ public class ItemManager : MonoBehaviour
             Sprite sprite = this.currentCart.getRandomSprite();
             SpriteRenderer spriteRenderer = Instantiate(item, firstPosition.transform).GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = sprite;
+            spriteRenderer.sortingOrder = 3;
             spriteRenderer.gameObject.GetComponent<Rigidbody2D>().AddForce(move, ForceMode2D.Impulse);
             Destroy(spriteRenderer.gameObject, 1f);
             this.currentCart.oneClick();

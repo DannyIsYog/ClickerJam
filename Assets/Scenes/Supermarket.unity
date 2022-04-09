@@ -2619,7 +2619,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1909268238846872576, guid: 6a693da9b529c934095af8af4d072199, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2699,7 +2699,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgrade: {fileID: 11400000, guid: a79395215c4efa346ac185b26e9ec621, type: 2}
-  _buttonText: {fileID: 2072347472}
+  _NameText: {fileID: 0}
+  _CostText: {fileID: 0}
+  _BuffText: {fileID: 0}
+  _LevelText: {fileID: 0}
+  image: {fileID: 0}
 --- !u!114 &1345921313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3172,10 +3176,10 @@ MonoBehaviour:
   clientCart: {fileID: 2048589722038903988, guid: 489aa011187a76d49917dfd7cf498f8d, type: 3}
   currentCart: {fileID: 0}
   ClientManager: {fileID: 561809158}
-  minClicks: 0
-  maxClicks: 5
-  maxMoney: 5
-  minMoney: 0
+  minClicks: 2
+  maxClicks: 50
+  maxMoney: 20
+  minMoney: 1
   firstPosition: {fileID: 351832965}
   item: {fileID: 450563362}
 --- !u!4 &1505056670
@@ -3468,7 +3472,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgrade: {fileID: 11400000, guid: b69cda33052ecbe4a9e109c8a7203cce, type: 2}
-  _buttonText: {fileID: 1775858092}
+  _NameText: {fileID: 0}
+  _CostText: {fileID: 0}
+  _BuffText: {fileID: 0}
+  _LevelText: {fileID: 0}
+  image: {fileID: 0}
 --- !u!114 &1612815847
 MonoBehaviour:
   m_ObjectHideFlags: 0

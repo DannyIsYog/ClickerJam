@@ -88,4 +88,17 @@ public class UpgradesManager : MonoBehaviour
         supermarketMenuUI.SetActive(true);
         dungeonMenuUI.SetActive(false);
     }
+
+    public ulong getMoneyUpgrade(ulong init)
+    {
+        ulong add = 1;
+        ulong mult = 1;
+        foreach (KeyValuePair<string, SupermarketUpgrade> spUpgrade in supermarketUpgrades)
+        {
+            add += spUpgrade.Value.moneyFlat;
+            if (spUpgrade.Value.moneyMultiplier > 0) mult += spUpgrade.Value.moneyMultiplier;
+        }
+
+        return (init + add) * mult;
+    }
 }

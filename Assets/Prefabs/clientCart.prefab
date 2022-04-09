@@ -55,9 +55,12 @@ MonoBehaviour:
   clicks: 0
   totalNumberClicks: 0
   sprites:
-  - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: -1982878051626011853, guid: be3736edb8f339548aace9439f3f97a4, type: 3}
+  - {fileID: -2333930956155218015, guid: be3736edb8f339548aace9439f3f97a4, type: 3}
+  - {fileID: -9144947511559864123, guid: e28f471eeb8a92446a109073da8c2149, type: 3}
+  - {fileID: -6734553832741784794, guid: be3736edb8f339548aace9439f3f97a4, type: 3}
+  - {fileID: -1214414752287013475, guid: be3736edb8f339548aace9439f3f97a4, type: 3}
+  - {fileID: 983609786880252467, guid: be3736edb8f339548aace9439f3f97a4, type: 3}
 --- !u!222 &5634223136349466205
 CanvasRenderer:
   m_ObjectHideFlags: 0
