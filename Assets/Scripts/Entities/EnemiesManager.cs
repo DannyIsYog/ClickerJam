@@ -15,6 +15,8 @@ public class EnemiesManager : MonoBehaviour
 
     [SerializeField] bool isBoss;
 
+    bool isFirstEnemy = true;
+
     public static EnemiesManager Instance { get; private set; }
 
     private void Awake()
@@ -70,6 +72,11 @@ public class EnemiesManager : MonoBehaviour
     {
         //Removes enemy from the queue
         queue.RemoveAt(0);
+        if (isFirstEnemy)
+        {
+            CanvasManager.managerInstace.firstEnemyDead();
+            isFirstEnemy = false;
+        }
 
         //moves the enemy in the back to the front of the queue
         queue[0].transform.position = spawnPoints[0].transform.position;

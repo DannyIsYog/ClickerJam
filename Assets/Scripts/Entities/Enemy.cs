@@ -29,6 +29,11 @@ public class Enemy : MonoBehaviour
 
         gameObject.GetComponent<SpriteRenderer>().color = Random.ColorHSV(0f, 1f, 0.4f, 0.4f, 1f, 1f);
 
+        if (isBoss)
+        {
+            CanvasManager.managerInstace.changeSceneActivate();
+        }
+
     }
 
     private void OnMouseDown()
