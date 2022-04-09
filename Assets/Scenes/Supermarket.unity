@@ -710,11 +710,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139774660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.24, y: -1.45, z: 0}
+  m_LocalPosition: {x: -4.0503807, y: -1.2543787, z: 52.864773}
   m_LocalScale: {x: 2.59, y: 2.59, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1698542656}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &142467398
 GameObject:
@@ -1888,6 +1888,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0943816db893a0346958c33ba39fb8f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsterCurrencyUI: {fileID: 0}
+  supermarketCurrencyUI: {fileID: 0}
+  dungeonUpgradeUI: {fileID: 0}
+  buttonDungeonUpgradeUI: {fileID: 0}
+  supermarketUpgradeUI: {fileID: 0}
+  buttonSupermarketUpgradeUI: {fileID: 0}
+  upgradesBackground: {fileID: 0}
+  changeSceneButton: {fileID: 0}
 --- !u!114 &620725054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1935,7 +1943,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620725052}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -1968,7 +1976,7 @@ RectTransform:
   - {fileID: 500701996}
   - {fileID: 1749798562}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2589,7 +2597,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1012880218 stripped
 GameObject:
@@ -3411,6 +3419,7 @@ MonoBehaviour:
   minMoney: 1
   firstPosition: {fileID: 351832965}
   item: {fileID: 450563362}
+  conveyorLights: {fileID: 139774660}
 --- !u!4 &1505056670
 Transform:
   m_ObjectHideFlags: 0
@@ -3830,6 +3839,38 @@ Transform:
   m_Father: {fileID: 20034918}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1698542655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698542656}
+  m_Layer: 0
+  m_Name: ConveryorBelt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698542656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698542655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8103807, y: -0.19562139, z: -52.864773}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 139774662}
+  - {fileID: 1773895702}
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1736936505
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,12 +4268,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773895700}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.24, y: -1.45, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.0503807, y: -1.2543787, z: 52.864773}
   m_LocalScale: {x: 2.59, y: 2.59, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1698542656}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1775858090
 GameObject:

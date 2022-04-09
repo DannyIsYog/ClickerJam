@@ -15,6 +15,8 @@ public class ItemManager : MonoBehaviour
     [SerializeField] GameObject firstPosition;
     [SerializeField] GameObject item;
 
+    [SerializeField] GameObject conveyorLights;
+
     private Vector2 move = new Vector2(-50, 0);
     // Start is called before the first frame update
     void Start()
@@ -50,6 +52,7 @@ public class ItemManager : MonoBehaviour
             CurrencyManager.Instance.addSupermarketCurrency(currentCart.getSupermarketCurrency());
             AudioManager.instance.Play("cashier_bip");
             Destroy(currentCart.gameObject, .5f);
+            flashLight();
             CanvasManager.managerInstace.SupermarketUpgrades();
             CanvasManager.managerInstace.firstItemScan();
             Invoke("createEntity", 1f);
@@ -63,9 +66,16 @@ public class ItemManager : MonoBehaviour
             spriteRenderer.sortingOrder = 3;
             spriteRenderer.gameObject.GetComponent<Rigidbody2D>().AddForce(move, ForceMode2D.Impulse);
             AudioManager.instance.Play("cashier_bip");
+            flashLight();
             Destroy(spriteRenderer.gameObject, 1f);
             this.currentCart.oneClick();
         }
+    }
+
+    public void flashLight()
+    {
+        if (conveyorLights.activeSelf) conveyorLights.SetActive(false);
+        else conveyorLights.SetActive(true);
     }
 
 }
