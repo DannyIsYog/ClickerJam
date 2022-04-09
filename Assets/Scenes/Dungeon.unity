@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 29656207}
   - component: {fileID: 29656206}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: ATM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2260,7 +2260,7 @@ GameObject:
   - component: {fileID: 372382915}
   - component: {fileID: 372382914}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Chocolates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6072,7 +6072,7 @@ GameObject:
   - component: {fileID: 1001452734}
   - component: {fileID: 1001452733}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Name Tag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6861,7 +6861,7 @@ GameObject:
   - component: {fileID: 1189377624}
   - component: {fileID: 1189377623}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Broom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7527,7 +7527,7 @@ GameObject:
   - component: {fileID: 1320879659}
   - component: {fileID: 1320879658}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Gum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11637,7 +11637,7 @@ GameObject:
   - component: {fileID: 2066295228}
   - component: {fileID: 2066295227}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: Magazines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

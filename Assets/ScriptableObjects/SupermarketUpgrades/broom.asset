@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprite: {fileID: 5592870823734184871, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
   upgradeName: Broom
-  moneyMultiplier: 2
-  moneyFlat: 0
-  level: 20
-  cost: 2
+  moneyMultiplier: 0
+  moneyFlat: 5
+  level: 1
+  cost: 10
   growthCost: 1.2

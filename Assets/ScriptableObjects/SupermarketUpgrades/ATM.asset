@@ -15,7 +15,7 @@ MonoBehaviour:
   Sprite: {fileID: -2282087247732282694, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
   upgradeName: ATM
   moneyMultiplier: 0
-  moneyFlat: 0
+  moneyFlat: 50
   level: 0
   cost: 0
   growthCost: 0
