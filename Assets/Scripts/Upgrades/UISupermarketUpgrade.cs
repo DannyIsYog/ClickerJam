@@ -7,6 +7,7 @@ public class UISupermarketUpgrade : MonoBehaviour
 {
     public SupermarketUpgrade upgrade;
     [SerializeField] private Text _buttonText;
+    [SerializeField] private Image image;
     public void buyUpgrade()
     {
         this.upgrade = UpgradesManager.Instance.buyUpgrade(upgrade);
@@ -25,5 +26,7 @@ public class UISupermarketUpgrade : MonoBehaviour
     private void Awake()
     {
         updateText();
+        image.sprite = upgrade.Sprite;
+        image.SetNativeSize();
     }
 }

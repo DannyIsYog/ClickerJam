@@ -8,6 +8,8 @@ public class UIMonsterUpgrade : MonoBehaviour
 {
     public MonsterUpgrade upgrade;
     [SerializeField] private Text _buttonText;
+
+    [SerializeField] private Image image;
     public void buyUpgrade()
     {
         this.upgrade = UpgradesManager.Instance.buyUpgrade(upgrade);
@@ -28,5 +30,7 @@ public class UIMonsterUpgrade : MonoBehaviour
     private void Awake()
     {
         updateText();
+        image.sprite = upgrade.Sprite;
+        image.SetNativeSize();
     }
 }

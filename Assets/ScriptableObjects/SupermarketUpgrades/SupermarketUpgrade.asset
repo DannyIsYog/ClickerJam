@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129daebc3d447b744bcf5946d4670287, type: 3}
   m_Name: SupermarketUpgrade
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: -1982878051626011853, guid: be3736edb8f339548aace9439f3f97a4, type: 3}
   upgradeName: valueItems
   moneyMultiplier: 2
   moneyFlat: 0
-  level: 0
-  cost: 2
+  level: 16
+  cost: 36.976875
   growthCost: 1.2
