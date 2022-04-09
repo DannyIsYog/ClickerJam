@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: e44ef3169e61cba4bb1aaee53ed68bfe
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6713563379527142732
+    second: Supermarket_0
+  - first:
+      213: 6577115489940510552
+    second: Supermarket_1
+  - first:
+      213: 2417047082730427294
+    second: Supermarket_2
+  - first:
+      213: -3499862215894619778
+    second: Supermarket_4
+  - first:
+      213: -6480013714805317617
+    second: Supermarket_5
+  - first:
+      213: 6786336179331569346
+    second: Supermarket_6
+  - first:
+      213: -570221827525397461
+    second: Supermarket_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,9 +62,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
-  spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -89,7 +110,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Supermarket_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 39
+        width: 36
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2b6322da1a4d2a0800000000000000
+      internalID: -6713563379527142732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Supermarket_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 186
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8579f98e0bb964b50800000000000000
+      internalID: 6577115489940510552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Supermarket_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 48
+        width: 36
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e939a8304831b8120800000000000000
+      internalID: 2417047082730427294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Supermarket_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 81
+        width: 36
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e792ac29bddfd6fc0800000000000000
+      internalID: -3499862215894619778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Supermarket_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 189
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00ae55ebdd5216a0800000000000000
+      internalID: -6480013714805317617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Supermarket_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 192
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6907facc8ed2e50800000000000000
+      internalID: 6786336179331569346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Supermarket_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 12
+        width: 159
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24bc2fd44a2618f0800000000000000
+      internalID: -570221827525397461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

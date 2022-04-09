@@ -7,7 +7,7 @@ TextureImporter:
     second: IconSupermarket_0
   - first:
       213: 5592870823734184871
-    second: IconSupermarket_5
+    second: IconSupermarket_
   - first:
       213: -8893982805119575827
     second: IconSupermarket_3
@@ -25,10 +25,10 @@ TextureImporter:
     second: IconSupermarket_2
   - first:
       213: 6284396725648106518
-    second: IconSupermarket_5
+    second: IconSupermarket_
   - first:
       213: 7540943389314143762
-    second: IconSupermarket_5
+    second: IconSupermarket_
   - first:
       213: -786584568170666265
     second: IconSupermarket_6
@@ -37,7 +37,7 @@ TextureImporter:
     second: IconSupermarket_8
   - first:
       213: 7151366046693117359
-    second: IconSupermarket_1
+    second: IconSupermarket_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -211,7 +211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconSupermarket_5
+      name: IconSupermarket_
       rect:
         serializedVersion: 2
         x: 203
@@ -232,7 +232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconSupermarket_1
+      name: IconSupermarket_5
       rect:
         serializedVersion: 2
         x: 243
