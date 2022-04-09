@@ -7,7 +7,10 @@ using UnityEngine.UI;
 public class UIMonsterUpgrade : MonoBehaviour
 {
     public MonsterUpgrade upgrade;
-    [SerializeField] private Text _buttonText;
+    [SerializeField] private Text _NameText;
+    [SerializeField] private Text _CostText;
+    [SerializeField] private Text _BuffText;
+    [SerializeField] private Text _LevelText;
 
     [SerializeField] private Image image;
     public void buyUpgrade()
@@ -19,16 +22,19 @@ public class UIMonsterUpgrade : MonoBehaviour
 
     private void updateText()
     {
-        var _buttonText = gameObject.GetComponentInChildren<UnityEngine.UI.Text>();
-        if (upgrade.damageFlat > 0)
-            _buttonText.text = upgrade.upgradeName + "    lvl." + upgrade.level + "\n" + Mathf.CeilToInt(upgrade.cost) + "S    +" + upgrade.damageFlat.ToString() + "Atk";
-        else
-            _buttonText.text = upgrade.upgradeName + "    lvl." + upgrade.level + "\n" + Mathf.CeilToInt(upgrade.cost) + "S    x" + upgrade.damageMultiplier.ToString() + "Atk";
-
+        _NameText.text = upgrade.name;
+        _CostText.text = Mathf.CeilToInt(upgrade.cost).ToString() + "SP";
+        _BuffText.text = upgrade.damageFlat > 0 ? '+' + upgrade.damageFlat.ToString() : 'x' + upgrade.damageMultiplier.ToString();
+        _LevelText.text = "lvl." + upgrade.level.ToString();
     }
 
     private void Awake()
     {
+        _NameText = this.transform.Find("Name").GetComponent<Text>();
+        _CostText = this.transform.Find("Cost").GetComponent<Text>();
+        _BuffText = this.transform.Find("Buff").GetComponent<Text>();
+        _LevelText = this.transform.Find("Level").GetComponent<Text>();
+        image = this.transform.Find("Image").GetComponent<Image>();
         updateText();
         image.sprite = upgrade.Sprite;
         image.SetNativeSize();
