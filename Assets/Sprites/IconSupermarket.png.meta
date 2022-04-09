@@ -7,7 +7,7 @@ TextureImporter:
     second: IconSupermarket_0
   - first:
       213: 5592870823734184871
-    second: IconSupermarket_1
+    second: IconSupermarket_5
   - first:
       213: -8893982805119575827
     second: IconSupermarket_3
@@ -20,6 +20,24 @@ TextureImporter:
   - first:
       213: 6180016785327870610
     second: IconSupermarket_11
+  - first:
+      213: 4361994572559286776
+    second: IconSupermarket_2
+  - first:
+      213: 6284396725648106518
+    second: IconSupermarket_5
+  - first:
+      213: 7540943389314143762
+    second: IconSupermarket_5
+  - first:
+      213: -786584568170666265
+    second: IconSupermarket_6
+  - first:
+      213: -1504788256296108213
+    second: IconSupermarket_8
+  - first:
+      213: 7151366046693117359
+    second: IconSupermarket_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +131,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 21
-        y: 117
+        y: 69
         width: 9
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,15 +148,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconSupermarket_1
+      name: IconSupermarket_4
       rect:
         serializedVersion: 2
-        x: 237
-        y: 105
-        width: 48
+        x: 219
+        y: 63
+        width: 24
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +172,12 @@ TextureImporter:
       name: IconSupermarket_3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 66
-        width: 33
-        height: 42
+        x: 162
+        y: 18
+        width: 21
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,64 +190,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconSupermarket_7
+      name: IconSupermarket_2
       rect:
         serializedVersion: 2
         x: 87
-        y: 66
-        width: 30
-        height: 21
+        y: 24
+        width: 24
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abae77c3db56450e0800000000000000
-      internalID: -2282087247732282694
+      spriteID: 8f10491f3fae88c30800000000000000
+      internalID: 4361994572559286776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconSupermarket_10
+      name: IconSupermarket_5
       rect:
         serializedVersion: 2
-        x: 27
-        y: 18
-        width: 27
+        x: 203
+        y: 15
+        width: 22
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d33766e0c9dd9fa00800000000000000
-      internalID: 790906871906464573
+      spriteID: 61422eb9689a63750800000000000000
+      internalID: 6284396725648106518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconSupermarket_11
+      name: IconSupermarket_1
       rect:
         serializedVersion: 2
-        x: 204
-        y: 18
-        width: 27
-        height: 42
+        x: 243
+        y: 9
+        width: 33
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2925b6be584d3c550800000000000000
-      internalID: 6180016785327870610
+      spriteID: fadcee7a781ce3360800000000000000
+      internalID: 7151366046693117359
       vertices: []
       indices: 
       edges: []
