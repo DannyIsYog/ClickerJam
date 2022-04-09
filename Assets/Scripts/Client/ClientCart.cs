@@ -9,6 +9,8 @@ public class ClientCart : MonoBehaviour
     [SerializeField] int totalNumberClicks = 0;
     [SerializeField] List<Sprite> sprites;
 
+    public int currentPrice = 0;
+
     // Start is called before the first frame update
     void Start()
     {

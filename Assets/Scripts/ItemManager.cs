@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ItemManager : MonoBehaviour
@@ -16,6 +17,12 @@ public class ItemManager : MonoBehaviour
     [SerializeField] GameObject item;
 
     [SerializeField] GameObject conveyorLights;
+
+    [SerializeField] TextMeshProUGUI listOfItemsText;
+
+    [SerializeField] TextMeshProUGUI priceText;
+
+    Queue<string> listOfItems = new Queue<string>();
 
     private Vector2 move = new Vector2(-50, 0);
     // Start is called before the first frame update
@@ -56,7 +63,7 @@ public class ItemManager : MonoBehaviour
             CanvasManager.managerInstace.SupermarketUpgrades();
             CanvasManager.managerInstace.firstItemScan();
             Invoke("createEntity", 1f);
-
+            resetScanText();
         }
         else if (this.currentCart.getClicks() > this.currentCart.getTotalNumberClicks())
         {
@@ -64,6 +71,15 @@ public class ItemManager : MonoBehaviour
             SpriteRenderer spriteRenderer = Instantiate(item, firstPosition.transform).GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = sprite;
             spriteRenderer.sortingOrder = 3;
+
+            listOfItems.Enqueue(spriteRenderer.sprite.name + "\n");
+            buildScanText();
+
+            int iteamPrice = Random.Range(1, ((int)this.currentCart.getSupermarketCurrency() - this.currentCart.currentPrice) / this.currentCart.getClicks());
+            this.currentCart.currentPrice += iteamPrice;
+            priceText.text = this.currentCart.currentPrice + "SD";
+
+
             spriteRenderer.gameObject.GetComponent<Rigidbody2D>().AddForce(move, ForceMode2D.Impulse);
             AudioManager.instance.Play("cashier_bip");
             flashLight();
@@ -76,6 +92,28 @@ public class ItemManager : MonoBehaviour
     {
         if (conveyorLights.activeSelf) conveyorLights.SetActive(false);
         else conveyorLights.SetActive(true);
+    }
+
+    public void buildScanText()
+    {
+        string text = "";
+
+        if (listOfItems.Count >= 10)
+        {
+            listOfItems.Dequeue();
+        }
+
+        foreach (var item in listOfItems)
+        {
+            text += item;
+        }
+        listOfItemsText.text = text;
+    }
+
+    public void resetScanText()
+    {
+        listOfItemsText.text = "";
+        listOfItems.Clear();
     }
 
 }
