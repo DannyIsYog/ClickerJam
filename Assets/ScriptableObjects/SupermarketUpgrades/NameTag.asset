@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129daebc3d447b744bcf5946d4670287, type: 3}
   m_Name: NameTag
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 3161816075838845635, guid: 3b362756ca538cb40a3f20c8ce1bcca6, type: 3}
   upgradeName: 
   moneyMultiplier: 0
   moneyFlat: 0

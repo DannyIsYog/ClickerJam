@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8a525b7aca78648bf5db90f2dec236, type: 3}
   m_Name: Slingshot
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 3986556159712945051, guid: 1d0e177437667ed4aa1571a5f576d2e1, type: 3}
   upgradeName: 
   damageMultiplier: 0
   damageFlat: 0

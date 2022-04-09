@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WodenSword
   m_EditorClassIdentifier: 
   Sprite: {fileID: -3980506886105713252, guid: 1d0e177437667ed4aa1571a5f576d2e1, type: 3}
-  upgradeName: Wood Sword
+  upgradeName: W. Sword
   damageMultiplier: 0
   damageFlat: 10
-  level: 0
-  cost: 100
+  level: 2
+  cost: 169
   growthCost: 1.3
