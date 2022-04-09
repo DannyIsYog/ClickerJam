@@ -17,6 +17,7 @@ public class ItemManager : MonoBehaviour
     [SerializeField] GameObject item;
 
     [SerializeField] GameObject conveyorLights;
+    [SerializeField] GameObject buttonLights;
 
     [SerializeField] TextMeshProUGUI listOfItemsText;
 
@@ -92,6 +93,9 @@ public class ItemManager : MonoBehaviour
     {
         if (conveyorLights.activeSelf) conveyorLights.SetActive(false);
         else conveyorLights.SetActive(true);
+
+        if (buttonLights.activeSelf) buttonLights.SetActive(false);
+        else buttonLights.SetActive(true);
     }
 
     public void buildScanText()
