@@ -50,6 +50,8 @@ public class ItemManager : MonoBehaviour
             CurrencyManager.Instance.addSupermarketCurrency(currentCart.getSupermarketCurrency());
             AudioManager.instance.Play("cashier_bip");
             Destroy(currentCart.gameObject, .5f);
+            CanvasManager.managerInstace.SupermarketUpgrades();
+            CanvasManager.managerInstace.firstItemScan();
             Invoke("createEntity", 1f);
 
         }

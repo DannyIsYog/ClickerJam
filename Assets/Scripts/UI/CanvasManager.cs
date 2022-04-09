@@ -30,6 +30,15 @@ public class CanvasManager : MonoBehaviour
         {
             Instance = this.gameObject;
         }
+
+        if (managerInstace != null && managerInstace != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            managerInstace = this;
+        }
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(this);
     }
@@ -53,8 +62,8 @@ public class CanvasManager : MonoBehaviour
 
     public void SupermarketUpgrades()
     {
-        supermarketUpgradeUI.SetActive(true);
         buttonSupermarketUpgradeUI.SetActive(true);
+        if (upgradesBackground == null) upgradesBackground = GameObject.Find("Menu_Background");
         upgradesBackground.SetActive(true);
     }
 

@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
 
         if (isBoss)
         {
-            CanvasManager.managerInstace.changeSceneActivate();
+            CanvasManager.managerInstace.DungeonUpgrades();
         }
 
     }

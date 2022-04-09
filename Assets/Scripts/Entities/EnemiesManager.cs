@@ -103,5 +103,9 @@ public class EnemiesManager : MonoBehaviour
     void calculateWaveSize()
     {
         waveSize = Mathf.CeilToInt(10 * Mathf.Pow(1.1f, this.level));
+        if (level >= 2)
+        {
+            CanvasManager.managerInstace.changeSceneActivate();
+        }
     }
 }
