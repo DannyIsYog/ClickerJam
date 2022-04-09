@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Rapier
   m_EditorClassIdentifier: 
   Sprite: {fileID: -8134333343233816129, guid: 1d0e177437667ed4aa1571a5f576d2e1, type: 3}
-  upgradeName: 
+  upgradeName: Rapier
   damageMultiplier: 0
-  damageFlat: 0
+  damageFlat: 9000
   level: 0
-  cost: 0
-  growthCost: 0
+  cost: 10000
+  growthCost: 4.7

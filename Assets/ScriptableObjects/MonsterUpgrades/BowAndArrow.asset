@@ -15,7 +15,7 @@ MonoBehaviour:
   Sprite: {fileID: -8397295163104659017, guid: 1d0e177437667ed4aa1571a5f576d2e1, type: 3}
   upgradeName: Bow
   damageMultiplier: 0
-  damageFlat: 100
+  damageFlat: 900
   level: 0
-  cost: 1000
+  cost: 500000
   growthCost: 1.4

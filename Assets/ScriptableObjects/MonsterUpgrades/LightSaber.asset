@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: LightSaber
   m_EditorClassIdentifier: 
   Sprite: {fileID: -2644406706243405348, guid: 1d0e177437667ed4aa1571a5f576d2e1, type: 3}
-  upgradeName: 
-  damageMultiplier: 0
+  upgradeName: Lightsaber
+  damageMultiplier: 40
   damageFlat: 0
   level: 0
-  cost: 0
-  growthCost: 0
+  cost: 420000000
+  growthCost: 6.9

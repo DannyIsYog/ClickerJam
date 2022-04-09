@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Stick
   m_EditorClassIdentifier: 
   Sprite: {fileID: -4540900035698372409, guid: 1d0e177437667ed4aa1571a5f576d2e1, type: 3}
-  upgradeName: stick
+  upgradeName: Stick
   damageMultiplier: 0
   damageFlat: 1
-  level: 0
+  level: 1
   cost: 2
   growthCost: 1.07

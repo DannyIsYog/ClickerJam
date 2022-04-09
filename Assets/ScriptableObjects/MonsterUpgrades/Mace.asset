@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Mace
   m_EditorClassIdentifier: 
   Sprite: {fileID: -6696163970009403197, guid: 1d0e177437667ed4aa1571a5f576d2e1, type: 3}
-  upgradeName: 
+  upgradeName: Mace
   damageMultiplier: 0
-  damageFlat: 0
+  damageFlat: 100
   level: 0
-  cost: 0
-  growthCost: 0
+  cost: 50000
+  growthCost: 2.1

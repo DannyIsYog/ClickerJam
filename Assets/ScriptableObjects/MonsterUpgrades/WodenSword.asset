@@ -17,5 +17,5 @@ MonoBehaviour:
   damageMultiplier: 0
   damageFlat: 10
   level: 2
-  cost: 169
+  cost: 130
   growthCost: 1.3
