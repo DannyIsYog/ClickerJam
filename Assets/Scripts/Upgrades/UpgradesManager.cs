@@ -95,8 +95,21 @@ public class UpgradesManager : MonoBehaviour
         ulong mult = 1;
         foreach (KeyValuePair<string, SupermarketUpgrade> spUpgrade in supermarketUpgrades)
         {
-            add += spUpgrade.Value.moneyFlat;
-            if (spUpgrade.Value.moneyMultiplier > 0) mult += spUpgrade.Value.moneyMultiplier;
+            add += spUpgrade.Value.moneyFlat * (ulong)spUpgrade.Value.level;
+            if (spUpgrade.Value.moneyMultiplier > 0) mult += spUpgrade.Value.moneyMultiplier * (ulong)spUpgrade.Value.level;
+        }
+
+        return (init + add) * mult;
+    }
+
+    public ulong getDamageUpgrade(ulong init)
+    {
+        ulong add = 1;
+        ulong mult = 1;
+        foreach (KeyValuePair<string, MonsterUpgrade> spUpgrade in monsterUpgrades)
+        {
+            add += spUpgrade.Value.damageFlat * (ulong)spUpgrade.Value.level;
+            if (spUpgrade.Value.damageMultiplier > 0) mult += spUpgrade.Value.damageMultiplier * (ulong)spUpgrade.Value.level;
         }
 
         return (init + add) * mult;

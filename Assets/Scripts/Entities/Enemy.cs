@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour
 
     public void dealDamage(ulong damage)
     {
+        Debug.Log(damage);
         if (this.health < damage)
         {
             die();

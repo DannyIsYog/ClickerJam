@@ -26,7 +26,7 @@ public class PlayerManager : MonoBehaviour
 
     public void dealDamage(Enemy enemy)
     {
-        enemy.dealDamage(damage);
+        enemy.dealDamage(UpgradesManager.Instance.getDamageUpgrade(1));
     }
 
     public void changeScene()
