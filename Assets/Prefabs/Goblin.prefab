@@ -485,6 +485,7 @@ MonoBehaviour:
   healthBar: {fileID: 991570107}
   healthBarObject: {fileID: 991570105}
   colliderComponent: {fileID: 5281691579397948065}
+  goblinKing: {fileID: 21300000, guid: bb8d0a4e72ab1254bb15368e5935d172, type: 3}
 --- !u!70 &5281691579397948065
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     public GameObject healthBarObject;
     public Collider2D colliderComponent;
 
+    public Sprite goblinKing;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,11 @@ public class Enemy : MonoBehaviour
         //Calculate Health
         float a = Mathf.Pow(1.55f, level - 1);
         this.health = (ulong)10 * (ulong)(level - 1 + Mathf.Pow(1.55f, level - 1));
-        if (isBoss) this.health *= 10;
+        if (isBoss)
+        {
+            this.health *= 10;
+            gameObject.GetComponent<SpriteRenderer>().sprite = goblinKing;
+        }
         healthBar.SetMaxHealth(health);
 
         //Calculate currencyDrop
